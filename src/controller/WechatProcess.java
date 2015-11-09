@@ -1,5 +1,10 @@
 package controller;
 
+import util.FormatXmlProcess;
+import util.ReceiveXmlEntity;
+import util.ReceiveXmlProcess;
+import util.TulingApiProcess;
+
 public class WechatProcess {
 
 	public String processWechatMag(String xml) {
@@ -13,6 +18,7 @@ public class WechatProcess {
 		}
 		
 		result = new FormatXmlProcess().formatXmlAnswer(xmlEntity.getFromUserName(), xmlEntity.getToUserName(), result);
+		return result;
 	}
 
 }
