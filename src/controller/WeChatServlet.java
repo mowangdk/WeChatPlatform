@@ -35,7 +35,10 @@ public class WeChatServlet extends HttpServlet {
 		String result = "";
 
 		/* 判断是否为微信接入激活验证,只有首次接入才会收到echostr参数,此时需要将它直接返回 */
-
+		
+//		进行signature检验
+//		signatrueCheck(request.getParameter("timestamp"),request.getParameter("nonce"));
+		
 		String echostr = request.getParameter("echostr");
 		if (null != echostr && echostr.length() > 1) {
 			result = echostr;
@@ -54,6 +57,11 @@ public class WeChatServlet extends HttpServlet {
 
 	}
 	
+	private void signatrueCheck(String parameter, String parameter2) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

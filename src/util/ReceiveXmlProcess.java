@@ -44,8 +44,7 @@ public class ReceiveXmlProcess {
 				Method method = c.getDeclaredMethod("set"+ele.getName(), field.getType());
 				
 				//调用set方法
-				method.invoke(msg, ele.getText());
-				
+				method.invoke(msg, ele.getText());			
 			} 
 		} catch (Exception e){
 			System.out.println("xml 格式异常:"+ strXml);
