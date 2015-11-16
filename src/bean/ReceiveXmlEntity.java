@@ -1,172 +1,172 @@
-package util;
+package bean;
 
 public class ReceiveXmlEntity {
 	/*
 	 * 接收到微信xml的实体类
 	 * 
 	 * */
-	private String toUserName="";
-	private String fromUserName="";
-	private String createTime="";
-	private String msgType = "";
-	private String msgId = "";
-	private String event = "";
-	private String eventKey = "";
-	private String ticket = "";
-	private String latitude = "";
-	private String longitude = "";
-	private String precision = "";
-	private String picUri = "";
-	private String mediaId = "";
-	private String title = "";
-	private String description = "";
-	private String url = "";
-	private String location_x = "";
-	private String location_y = "";
-	private String scale = "";
-	private String label = "";
-	private String content = "";
-	private String format = "";
-	private String recognition = "";
-	
-	
+	private String ToUserName="";
+	private String FromUserName="";
+	private String CreateTime="";
+	private String MsgType = "";
+	private String MsgId = "";
+	private String Event = "";
+	private String EventKey = "";
+	private String Ticket = "";
+	private String Latitude = "";
+	private String Longitude = "";
+	private String Precision = "";
+	private String PicUri = "";
+	private String MediaId = "";
+	private String Title = "";
+	private String Description = "";
+	private String Url = "";
+	private String Location_x = "";
+	private String Location_y = "";
+	private String Scale = "";
+	private String Label = "";
+	private String Content = "";
+	private String Format = "";
+	private String Recognition = "";
 	public String getToUserName() {
-		return toUserName;
+		return ToUserName;
 	}
 	public void setToUserName(String toUserName) {
-		this.toUserName = toUserName;
+		ToUserName = toUserName;
 	}
 	public String getFromUserName() {
-		return fromUserName;
+		return FromUserName;
 	}
 	public void setFromUserName(String fromUserName) {
-		this.fromUserName = fromUserName;
+		FromUserName = fromUserName;
 	}
 	public String getCreateTime() {
-		return createTime;
+		return CreateTime;
 	}
 	public void setCreateTime(String createTime) {
-		this.createTime = createTime;
+		CreateTime = createTime;
 	}
 	public String getMsgType() {
-		return msgType;
+		return MsgType;
 	}
 	public void setMsgType(String msgType) {
-		this.msgType = msgType;
+		MsgType = msgType;
 	}
 	public String getMsgId() {
-		return msgId;
+		return MsgId;
 	}
 	public void setMsgId(String msgId) {
-		this.msgId = msgId;
+		MsgId = msgId;
 	}
 	public String getEvent() {
-		return event;
+		return Event;
 	}
 	public void setEvent(String event) {
-		this.event = event;
+		Event = event;
 	}
 	public String getEventKey() {
-		return eventKey;
+		return EventKey;
 	}
 	public void setEventKey(String eventKey) {
-		this.eventKey = eventKey;
+		EventKey = eventKey;
 	}
 	public String getTicket() {
-		return ticket;
+		return Ticket;
 	}
 	public void setTicket(String ticket) {
-		this.ticket = ticket;
+		Ticket = ticket;
 	}
 	public String getLatitude() {
-		return latitude;
+		return Latitude;
 	}
 	public void setLatitude(String latitude) {
-		this.latitude = latitude;
+		Latitude = latitude;
 	}
 	public String getLongitude() {
-		return longitude;
+		return Longitude;
 	}
 	public void setLongitude(String longitude) {
-		this.longitude = longitude;
+		Longitude = longitude;
 	}
 	public String getPrecision() {
-		return precision;
+		return Precision;
 	}
 	public void setPrecision(String precision) {
-		this.precision = precision;
+		Precision = precision;
 	}
 	public String getPicUri() {
-		return picUri;
+		return PicUri;
 	}
 	public void setPicUri(String picUri) {
-		this.picUri = picUri;
+		PicUri = picUri;
 	}
 	public String getMediaId() {
-		return mediaId;
+		return MediaId;
 	}
 	public void setMediaId(String mediaId) {
-		this.mediaId = mediaId;
+		MediaId = mediaId;
 	}
 	public String getTitle() {
-		return title;
+		return Title;
 	}
 	public void setTitle(String title) {
-		this.title = title;
+		Title = title;
 	}
 	public String getDescription() {
-		return description;
+		return Description;
 	}
 	public void setDescription(String description) {
-		this.description = description;
+		Description = description;
 	}
 	public String getUrl() {
-		return url;
+		return Url;
 	}
 	public void setUrl(String url) {
-		this.url = url;
+		Url = url;
 	}
 	public String getLocation_x() {
-		return location_x;
+		return Location_x;
 	}
 	public void setLocation_x(String location_x) {
-		this.location_x = location_x;
+		Location_x = location_x;
 	}
 	public String getLocation_y() {
-		return location_y;
+		return Location_y;
 	}
 	public void setLocation_y(String location_y) {
-		this.location_y = location_y;
+		Location_y = location_y;
 	}
 	public String getScale() {
-		return scale;
+		return Scale;
 	}
 	public void setScale(String scale) {
-		this.scale = scale;
+		Scale = scale;
 	}
 	public String getLabel() {
-		return label;
+		return Label;
 	}
 	public void setLabel(String label) {
-		this.label = label;
+		Label = label;
 	}
 	public String getContent() {
-		return content;
+		return Content;
 	}
 	public void setContent(String content) {
-		this.content = content;
+		Content = content;
 	}
 	public String getFormat() {
-		return format;
+		return Format;
 	}
 	public void setFormat(String format) {
-		this.format = format;
+		Format = format;
 	}
 	public String getRecognition() {
-		return recognition;
+		return Recognition;
 	}
 	public void setRecognition(String recognition) {
-		this.recognition = recognition;
+		Recognition = recognition;
 	}
+	
+
 	
 }

@@ -8,6 +8,8 @@ import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 
+import bean.ReceiveXmlEntity;
+
 /*
  * 解析收到的微信xml，返回消息对象
  * */
@@ -32,7 +34,7 @@ public class ReceiveXmlProcess {
 			msg = new ReceiveXmlEntity();
 			
 			//利用反射机制,调用set方法,获取该实体的元类型
-			Class<?> c = Class.forName("demo.entity.ReceiveXmlEntity");
+			Class<?> c = Class.forName("bean.ReceiveXmlEntity");
 			msg = (ReceiveXmlEntity) c.newInstance(); //创建这个实体的对象
 			while (iter.hasNext()){
 				Element ele = (Element) iter.next();

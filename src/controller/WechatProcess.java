@@ -1,9 +1,10 @@
 package controller;
 
+import turing.TulingApiProcess;
 import util.FormatXmlProcess;
-import util.ReceiveXmlEntity;
+import bean.ReceiveXmlEntity;
 import util.ReceiveXmlProcess;
-import util.TulingApiProcess;
+
 
 public class WechatProcess {
 
@@ -13,9 +14,9 @@ public class WechatProcess {
 		
 		//以文本消息为例,调用图灵机器人api接口,获取回复内容
 		String result = "";
-		if ("text".endsWith(xmlEntity.getMsgType())){
+//		if ("text".endsWith(xmlEntity.getMsgType())){
 			result = new TulingApiProcess().getTulingResult(xmlEntity.getContent());
-		}
+//		}
 		
 		result = new FormatXmlProcess().formatXmlAnswer(xmlEntity.getFromUserName(), xmlEntity.getToUserName(), result);
 		return result;

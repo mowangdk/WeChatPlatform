@@ -19,7 +19,7 @@ public class WeChatServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
-
+		response.setContentType("text/html;charset=utf-8");
 		// 读取接收到的xml信息
 		StringBuffer sb = new StringBuffer();
 		InputStream is = request.getInputStream();
